@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-white font-sans text-ink antialiased; min-width: 1440px; }
+}
+@layer components {
+  /* основной контейнер макета: 1200px */
+  .wrap { @apply mx-auto w-[1200px]; }
+  /* контейнер шапки/подвала с разделительной линией: 1280px */
+  .wrap-wide { @apply mx-auto w-[1280px]; }
+}
